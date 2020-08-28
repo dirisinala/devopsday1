@@ -1,6 +1,3 @@
 ﻿tetetetetetet
 tttttttt
-
-
-dev branch to master
-
+qa branch changes
