@@ -12,6 +12,12 @@ pipeline{
             steps{
                 echo 'first build'
             }
+            stage ('Deploy')
+        {
+            steps{
+                echo 'first build'
+            }
+
         }
     }
     
