@@ -6,6 +6,7 @@ pipeline{
             steps{
                 echo 'first build'
 		sh 'python myfirstpythontest.py'
+		    echo 'first build'
             }
         }
             stage ('Deploy')
