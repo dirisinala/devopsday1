@@ -5,7 +5,7 @@ pipeline{
         {
             steps{
                 echo 'first build'
-		sh 'sudo docker build -t test1.0 .'	    
+		sh 'docker build -t test1.0 .'	    
 		    echo 'first build'
 		    echo 'first build'
             }
