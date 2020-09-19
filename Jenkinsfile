@@ -13,6 +13,10 @@ pipeline{
 		
 		sh "docker build -t test1.0 ."	    
 		echo 'first build'
+		sh "docker images"
+		sh "docker ps"
+		sh "docker ps -a"
+		sh "docker run prime1.0"
 		   }
 		
         }
