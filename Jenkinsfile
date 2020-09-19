@@ -5,10 +5,11 @@ pipeline{
         {
             steps{
                 echo 'first build'
+		def workspace = pwd()
+		sh 'echo ${workspace}' 
 		sh 'docker build -t test1.0 .'	    
-		    echo 'first build'
-		    echo 'first build'
-            }
+		echo 'first build'
+		   }
         }
             stage ('Deploy')
         {
