@@ -1,5 +1,9 @@
 pipeline{
-    agent any
+	agent {
+		dockerfile {
+				filename 'Dockerfile'
+			    }
+	       }
     stages{
         stage ('Build')
         {
@@ -11,7 +15,7 @@ pipeline{
 		sh "echo ${workspace}" 
 		sh "chmod 777 ${workspace}"
 		
-		sh "docker build -t test1.0 ."	    
+		/*sh "docker build -t test1.0 ."	*/     
 		echo 'first build'
 		sh "docker images"
 		sh "docker ps"
