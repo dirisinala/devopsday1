@@ -9,7 +9,9 @@ pipeline{
 			}
 		echo 'first build'
 		sh "echo ${workspace}" 
-		sh 'docker build -t test1.0 .'	    
+		sh "chmod 777 ${workspace}"
+		
+		sh "docker build -t test1.0 ."	    
 		echo 'first build'
 		   }
 		
